@@ -1,7 +1,16 @@
 aid: kami
 name: KAMI
-description: KAMI is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  KAMI (Çizgi Studio) is a next-generation transmedia entertainment platform out
+  of Turkey that lets a community read, write, and live inside stories. The mobile
+  app and web platform offer thousands of original webtoons, comics (çizgi roman),
+  novels, and AI-character chat across genres like romance, thriller, fantasy, and
+  horror, plus vertical drama viewing. Community-validated narratives are measured
+  through read rates, micro-transactions, and engagement, then graduate into
+  vertical-drama production and licensable intellectual property — a "story IP
+  engine." KAMI is a consumer product (2.5M+ users) with no public developer API;
+  it is part of the wearekami.com ecosystem and a 500 Global Creators Ventures
+  portfolio company, added to the API Evangelist network for enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/kami/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +18,31 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-no-public-api: true
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://readkami.com/android-chrome-512x512.png
 tags:
 - Company
+- Entertainment
+- Webtoons
+- Comics
+- Storytelling
+- Consumer App
+- Media
+- Turkey
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kami-domain-security.yml
 - type: Website
   url: https://readkami.com
+- type: SignUp
+  url: https://cizgi.studio/kayit
+- type: Login
+  url: https://cizgi.studio/giris
+- type: PrivacyPolicy
+  url: https://cizgi.studio/privacy-policy
+- type: AppStore
+  url: https://apps.apple.com/us/app/kami-read-and-write/id1580401899
+- type: GooglePlay
+  url: https://play.google.com/store/apps/details?id=cizgi.studio
+- type: ParentCompany
+  url: https://wearekami.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
